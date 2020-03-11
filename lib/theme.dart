@@ -14,3 +14,23 @@ class BilluyoColors {
   static final Color warmGrey = ui.cssStringToColor('#808080');
   static final Color warmPink = ui.cssStringToColor('#ff6288');
 }
+
+class BilluyoTextStyles {
+  static TextStyle header([Color color]) => TextStyle(
+        fontSize: 18,
+        fontWeight: FontWeight.bold,
+        color: color ?? BilluyoColors.darkishBlue,
+      );
+
+  static TextStyle smallText([Color color]) => TextStyle(
+        fontSize: 10,
+        fontWeight: FontWeight.bold,
+        color: color ?? BilluyoColors.darkishBlue,
+      );
+
+  static final largeHeader = TextStyle(
+    fontSize: 48,
+    fontWeight: FontWeight.w800,
+    color: Colors.white,
+  );
+}

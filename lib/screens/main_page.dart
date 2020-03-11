@@ -1,6 +1,7 @@
 import 'package:billuyo/screens/screens.dart';
 import 'package:billuyo/theme.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_svg/svg.dart';
 
 class MainPage extends StatefulWidget {
   @override
@@ -36,7 +37,7 @@ class _MainPageState extends State<MainPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Billuyo'),
+        title: SvgPicture.asset('assets/blue_icon.svg'),
       ),
       bottomNavigationBar: BottomNavigationBar(
         type: BottomNavigationBarType.fixed,
@@ -50,23 +51,23 @@ class _MainPageState extends State<MainPage> {
         },
         items: [
           BottomNavigationBarItem(
-            icon: Icon(Icons.ac_unit),
+            icon: Icon(Icons.account_balance),
             title: Text('Start'),
           ),
           BottomNavigationBarItem(
-            icon: Icon(Icons.ac_unit),
+            icon: Icon(Icons.payment),
             title: Text('Payment'),
           ),
           BottomNavigationBarItem(
-            icon: Icon(Icons.ac_unit),
+            icon: Icon(Icons.transform),
             title: Text('Trans.'),
           ),
           BottomNavigationBarItem(
-            icon: Icon(Icons.ac_unit),
+            icon: Icon(Icons.battery_charging_full),
             title: Text('Charge'),
           ),
           BottomNavigationBarItem(
-            icon: Icon(Icons.ac_unit),
+            icon: Icon(Icons.help),
             title: Text('Help'),
           ),
         ],
