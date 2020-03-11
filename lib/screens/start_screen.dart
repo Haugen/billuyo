@@ -1,6 +1,7 @@
 import 'package:billuyo/theme.dart';
 import 'package:billuyo/widgets/widgets.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_svg/svg.dart';
 
 class StartScreen extends StatelessWidget {
   @override
@@ -41,6 +42,17 @@ class StartScreen extends StatelessWidget {
             ),
           ),
           RecentMovements(),
+          PromoCard(
+            imageText: SvgPicture.asset('assets/recomienda.svg'),
+            icon: SvgPicture.asset('assets/paper_ariplain_icon.svg'),
+            backgroundColor: BilluyoColors.aquamarine,
+          ),
+          PromoCard(
+            imageText: SvgPicture.asset('assets/ver_como_usar_el_app.svg'),
+            icon: SvgPicture.asset('assets/phone_icon.svg'),
+            backgroundColor: BilluyoColors.darkSkyBlue,
+            imageRight: false,
+          ),
         ],
       ),
     );
