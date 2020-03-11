@@ -41,7 +41,7 @@ class ActionCard extends StatelessWidget {
                 children: <Widget>[
                   Text(
                     linkText.toUpperCase(),
-                    style: BilluyoTextStyles.actionText,
+                    style: BilluyoTextStyles.actionText(),
                   ),
                   Icon(
                     Icons.arrow_forward,

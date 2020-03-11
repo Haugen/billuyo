@@ -10,7 +10,7 @@ class BilluyoColors {
   static final Color greyishBrown = ui.cssStringToColor('#525252');
   static final Color greyish = ui.cssStringToColor('#b1b1b1');
   static final Color lightGrey = ui.cssStringToColor('#dbdbdb');
-  static final Color almostWhite = ui.cssStringToColor('#f6f6f6');
+  static final Color almostWhite = ui.cssStringToColor('#eaeaea');
   static final Color warmGrey = ui.cssStringToColor('#808080');
   static final Color warmPink = ui.cssStringToColor('#ff6288');
 }
@@ -28,15 +28,15 @@ class BilluyoTextStyles {
         color: color ?? BilluyoColors.darkishBlue,
       );
 
+  static TextStyle actionText([Color color]) => TextStyle(
+        fontSize: 14,
+        fontWeight: FontWeight.bold,
+        color: color ?? Colors.white,
+      );
+
   static final largeHeader = TextStyle(
     fontSize: 48,
     fontWeight: FontWeight.w300,
-    color: Colors.white,
-  );
-
-  static final actionText = TextStyle(
-    fontSize: 14,
-    fontWeight: FontWeight.bold,
     color: Colors.white,
   );
 }

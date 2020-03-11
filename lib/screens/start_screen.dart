@@ -37,6 +37,7 @@ class StartScreen extends StatelessWidget {
               ],
             ),
           ),
+          RecentMovements(),
         ],
       ),
     );
