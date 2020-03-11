@@ -12,17 +12,17 @@ class AccountStatus extends StatelessWidget {
         children: <Widget>[
           SizedBox(height: 10),
           Text(
-            'Account status',
+            'Estado de cuenta.',
             style: BilluyoTextStyles.header(BilluyoColors.seaweed),
           ),
-          SizedBox(height: 10),
+          SizedBox(height: 20),
           Text(
             '\$457,483',
             style: BilluyoTextStyles.largeHeader,
           ),
           SizedBox(height: 20),
           Text(
-            'Amount Available for cash withdrawals.',
+            'Monto Disponible para retiros con Effecty.',
             style: BilluyoTextStyles.smallText(BilluyoColors.seaweed),
           ),
         ],

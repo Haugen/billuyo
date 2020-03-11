@@ -30,7 +30,13 @@ class BilluyoTextStyles {
 
   static final largeHeader = TextStyle(
     fontSize: 48,
-    fontWeight: FontWeight.w800,
+    fontWeight: FontWeight.w300,
+    color: Colors.white,
+  );
+
+  static final actionText = TextStyle(
+    fontSize: 14,
+    fontWeight: FontWeight.bold,
     color: Colors.white,
   );
 }

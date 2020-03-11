@@ -52,11 +52,11 @@ class _MainPageState extends State<MainPage> {
         items: [
           BottomNavigationBarItem(
             icon: Icon(Icons.account_balance),
-            title: Text('Start'),
+            title: Text('Inicio'),
           ),
           BottomNavigationBarItem(
             icon: Icon(Icons.payment),
-            title: Text('Payment'),
+            title: Text('Cobro'),
           ),
           BottomNavigationBarItem(
             icon: Icon(Icons.transform),
@@ -64,11 +64,11 @@ class _MainPageState extends State<MainPage> {
           ),
           BottomNavigationBarItem(
             icon: Icon(Icons.battery_charging_full),
-            title: Text('Charge'),
+            title: Text('Recarga'),
           ),
           BottomNavigationBarItem(
             icon: Icon(Icons.help),
-            title: Text('Help'),
+            title: Text('Ayuda'),
           ),
         ],
       ),

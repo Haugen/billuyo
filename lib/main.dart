@@ -14,7 +14,13 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
         primaryColor: BilluyoColors.seaweed,
-        textTheme: GoogleFonts.ralewayTextTheme(),
+        textTheme:
+            GoogleFonts.ralewayTextTheme(Theme.of(context).textTheme).copyWith(
+          body1: TextStyle(
+            fontSize: 16,
+            color: BilluyoColors.darkishBlue,
+          ),
+        ),
       ),
       home: MainPage(),
     );
