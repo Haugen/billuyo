@@ -19,12 +19,14 @@ class StartScreen extends StatelessWidget {
                   backgroundColor: BilluyoColors.darkSkyBlue,
                   text: 'Solicita el pago de tus servicios prestados.',
                   linkText: 'Generar cobro',
+                  navbarIndex: 1,
                 ),
                 ActionCard(
                   title: 'Transferencias',
                   backgroundColor: BilluyoColors.aquamarine,
                   text: 'As movimientos personales o a terceros.',
                   linkText: 'Transferir',
+                  navbarIndex: 2,
                 ),
                 ActionCard(
                   title: 'Recargar celular',
@@ -32,6 +34,7 @@ class StartScreen extends StatelessWidget {
                   text:
                       'No dejes de hablar con tu familia, recarga tu celular.',
                   linkText: 'Recargar',
+                  navbarIndex: 3,
                 ),
                 SizedBox(height: 8),
               ],

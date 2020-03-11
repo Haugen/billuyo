@@ -1,7 +1,9 @@
+import 'package:billuyo/providers/main_provider.dart';
 import 'package:billuyo/screens/screens.dart';
 import 'package:billuyo/theme.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
+import 'package:provider/provider.dart';
 
 class MainPage extends StatefulWidget {
   @override
@@ -9,10 +11,8 @@ class MainPage extends StatefulWidget {
 }
 
 class _MainPageState extends State<MainPage> {
-  int _index = 0;
-
-  Widget _getScreen() {
-    switch (_index) {
+  Widget _getScreen(MainProvider mp) {
+    switch (mp.navbarIndex) {
       case 0:
         return StartScreen();
         break;
@@ -35,6 +35,8 @@ class _MainPageState extends State<MainPage> {
 
   @override
   Widget build(BuildContext context) {
+    MainProvider _mainProvider = Provider.of<MainProvider>(context);
+
     return Scaffold(
       appBar: AppBar(
         title: SvgPicture.asset('assets/blue_icon.svg'),
@@ -43,11 +45,9 @@ class _MainPageState extends State<MainPage> {
         type: BottomNavigationBarType.fixed,
         selectedItemColor: BilluyoColors.darkishBlue,
         backgroundColor: BilluyoColors.almostWhite,
-        currentIndex: _index,
+        currentIndex: _mainProvider.navbarIndex,
         onTap: (index) {
-          setState(() {
-            _index = index;
-          });
+          _mainProvider.changeNavbarIndex(index);
         },
         items: [
           BottomNavigationBarItem(
@@ -72,7 +72,7 @@ class _MainPageState extends State<MainPage> {
           ),
         ],
       ),
-      body: _getScreen(),
+      body: _getScreen(_mainProvider),
     );
   }
 }
